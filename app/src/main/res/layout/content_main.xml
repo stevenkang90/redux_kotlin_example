@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ste.redux_kotlin_example.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/counter_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+    <Button
+        android:id="@+id/increase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="increase"
+        android:layout_below="@+id/counter_textview"/>
+    <Button
+        android:id="@+id/decrease_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="decrease"
+        android:layout_below="@+id/increase_button"/>
+</RelativeLayout>
